@@ -6,7 +6,7 @@ import { MdOutlineShoppingCart, MdOutlineMenu } from "react-icons/md";
 
 const Navbar = () => {
   return (
-    <header className="flex items-center justify-between py-8 px-4 bg-background md:px-6">
+    <header className="flex items-center justify-between py-8 bg-background">
       <Link href="#" className="flex items-center gap-2" prefetch={false}>
         <div className="w-6 h-6">Logo</div>
         <span className="sr-only">Acme Inc</span>
@@ -32,7 +32,7 @@ const Navbar = () => {
         </Link>
       </nav>
       <div className="flex items-center gap-4">
-        <Link href="#" className="text-muted-foreground hover:text-foreground" prefetch={false}>
+        <Link href="/auth" className="text-black cursor-pointer hover:text-foreground" >
           Login
         </Link>
         <Link href="#" size="icon" variant="ghost" className="text-muted-foreground hover:text-foreground">
@@ -52,7 +52,7 @@ const Navbar = () => {
           </SheetTrigger>
           <SheetContent side="left" className="md:hidden w-full">
             <nav className="grid gap-12 text-center p-4 text-sm font-medium">
-              <Link href="#" className="text-primary-foreground" prefetch={false}>
+              <Link href="#" className="text-black" prefetch={false}>
                 Home
               </Link>
               <Link href="#" className="text-muted-foreground hover:text-foreground" prefetch={false}>
